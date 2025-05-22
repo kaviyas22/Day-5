@@ -3,19 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package animal;
-abstract class Animal{
-    abstract void sound();
+package animal2;
+interface Animal2{
+    void sound();
 }
-class cat extends Animal{
-    void sound(){System.out.println("meow...");}
+class cat implements Animal2{
+    public void sound(){System.out.println("meow...");}
 }
 public class Main{
     
     public static void main(String[] args) {
-        Animal c = new cat();
+        cat c = new cat();
         c.sound();
-        
+ 
     }
-    
+        
 }
